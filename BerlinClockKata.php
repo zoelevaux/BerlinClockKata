@@ -9,9 +9,12 @@ class BerlinClockKata
         $nombreDeMinuteDuHaut = $minutes / 5;
         $nombreDeMinuteDuBas = $minutes % 5;
         $string = "";
+        $nombreLampesAllumeesHaut = 0;
         for ($i = 0; $i < 11; $i++) {
             if ($nombreDeMinuteDuHaut >=1) {
-                $string .= "Y";
+                $nombreLampesAllumeesHaut++;
+                if($nombreLampesAllumeesHaut%3 === 0) $string .= "R";
+                else $string .= "Y";
                 $nombreDeMinuteDuHaut--;
             } else {
                 $string .= "O";

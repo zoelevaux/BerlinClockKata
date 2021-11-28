@@ -61,7 +61,9 @@ class BerlinClockKata
             }
         }
 
-    return $string;
-}
+        return $string;
+    }
+
+
 
 }

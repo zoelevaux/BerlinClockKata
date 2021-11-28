@@ -36,4 +36,11 @@ class BerlinClockKataTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals("OOOO ROOO",$actual);
     }
 
+    public function testHeuresGiven3()
+    {
+        $berlinclock = new BerlinClockKata();
+        $actual = $berlinclock->getHeure(3);
+        $this->assertEquals("OOOO RRRO",$actual);
+    }
+
     }

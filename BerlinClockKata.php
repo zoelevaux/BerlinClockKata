@@ -64,9 +64,13 @@ class BerlinClockKata
         return $string;
     }
 
-    public function getSecondes(int $secondes)
+    public function getSecondes($secondes)
     {
         return $secondes % 2 == 0 ? "R" : "O";
+    }
+
+    public function getBerlinClockKata($secondes, $heures, $minutes){
+        return  $this->getSecondes($secondes) . " " . $this->getHeures($heures) . " " . $this->getMinutes($minutes);
     }
 
 

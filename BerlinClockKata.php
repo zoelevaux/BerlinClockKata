@@ -64,6 +64,10 @@ class BerlinClockKata
         return $string;
     }
 
+    public function getSeconde(int $secondes)
+    {
+        return $secondes % 2 == 0 ? "R" : "O";
+    }
 
 
 }

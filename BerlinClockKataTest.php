@@ -71,5 +71,12 @@ class BerlinClockKataTest extends \PHPUnit\Framework\TestCase
         $actual = $berlinclock->getSeconde(0);
         $this->assertEquals("R",$actual);
     }
+
+    public function testSecondesGiven1()
+    {
+        $berlinclock = new BerlinClockKata();
+        $actual = $berlinclock->getSeconde(1);
+        $this->assertEquals("O",$actual);
+    }
 }
 

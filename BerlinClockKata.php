@@ -34,4 +34,21 @@ class BerlinClockKata
 
         return $string;
     }
+
+
+    public function getHeure($heure) {
+        $nombreDHeureDuBas = $heure % 5;
+        $string = "OOOO ";
+        for ($i = 0; $i < 4; $i++) {
+            if ($nombreDHeureDuBas >= 1) {
+                $string .= "R";
+                $nombreDHeureDuBas--;
+            } else {
+                $string .= "O";
+            }
+        }
+
+    return $string;
+}
+
 }

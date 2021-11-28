@@ -4,7 +4,7 @@ namespace BerlinClockKata;
 class BerlinClockKata
 {
 
-    public function getMinute($minutes)
+    public function getMinutes($minutes)
     {
         $nombreDeMinuteDuHaut = $minutes / 5;
         $nombreDeMinuteDuBas = $minutes % 5;
@@ -36,7 +36,7 @@ class BerlinClockKata
     }
 
 
-    public function getHeure($heures) {
+    public function getHeures($heures) {
         $nombreDHeureDuHaut = $heures / 5;
         $nombreDHeureDuBas = $heures % 5;
         $string = "";
@@ -64,7 +64,7 @@ class BerlinClockKata
         return $string;
     }
 
-    public function getSeconde(int $secondes)
+    public function getSecondes(int $secondes)
     {
         return $secondes % 2 == 0 ? "R" : "O";
     }
